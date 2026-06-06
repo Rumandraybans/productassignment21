@@ -1,0 +1,9 @@
+<div class="container mt-4">
+  <div *ngIf="userRole === 'admin'">
+    <app-admin-dashboard></app-admin-dashboard>
+  </div>
+  
+  <div *ngIf="userRole === 'customer'">
+    <app-customer-dashboard></app-customer-dashboard>
+  </div>
+</div>
